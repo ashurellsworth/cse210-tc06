@@ -44,26 +44,23 @@ class Director:
 
     def _get_inputs(self):
 
-        # # display the game board
-        # board = self._board.to_string()
-        # self._console.write(board)
-        # # get next player's move
+        # display the game board
+        board = self._board.to_string()
+        self._console.write(board)
+        # get next player's move
         player = self._roster.get_current()
         self._console.write(f"{player.get_name()}'s turn:")
         attempt = self._console.read_number("What is your guess? ")
         guess = Move(attempt)
         player.set_guess(guess)
 
-    # def _do_updates(self):
-    #     """Updates the important game information for each round of play. In
-    #     this case, that means updating the board with the current move.
-
-    #     Args:
-    #         self (Director): An instance of Director.
-    #     """
-    #     player = self._roster.get_current()
-    #     move = player.get_move()
-    #     self._board.apply(move)
+    def _do_updates(self):
+        """Updates the important game information for each round of play. In
+        this case, that means updating the board with the current move.
+        """
+        player = self._roster.get_current()
+        move = player.get_move()
+        self._board.apply(move)
 
     def _do_outputs(self):
         """Outputs the important game information for each round of play. In
