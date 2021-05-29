@@ -49,3 +49,4 @@ root                    (project root folder)
 -  # TODO: Add your names and emails here
 
 Samuel Witt | wit19011@byui.edu
+Ashur Ellsworth | ell15022@byui.edu
