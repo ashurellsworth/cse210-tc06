@@ -34,6 +34,7 @@ class Console:
         Returns:
             integer: The user's input as an integer.
         """
+
         return int(input(prompt))
 
     def write(self, text):
