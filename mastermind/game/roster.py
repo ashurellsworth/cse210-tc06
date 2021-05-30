@@ -21,15 +21,17 @@ class Roster:
         if player not in self.players:
             self.players.append(player)
 
+    def get_players(self):
+        """Gets the both players."""
+
+        names = (self.players[0], self.players[1])
+
+        return names
+
     def get_current(self):
         """Gets the current player object."""
 
         return self.players[self.current]
-
-    def get_players(self):
-        """Gets the players object."""
-
-        return self.players._name
 
     def next_player(self):
         """Advances the turn to the next player."""

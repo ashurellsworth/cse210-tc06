@@ -13,14 +13,13 @@ class Player:
 
         """
         return self._move
-        
 
     def get_name(self):
         """Returns the player's name.
         """
         return self._name
 
-    def set_move(self, move):
-        """Sets the player's last move to the given instance of Move."""
+    def set_guess(self, guess):
+        """Sets the player's last guess to the given instance of guess."""
 
-        self._move = move
+        self._move = guess
